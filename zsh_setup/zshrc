@@ -1,0 +1,16 @@
+#! /bin/zsh
+FILE_LOC=`readlink ${0:a}`
+DIR="/Users/jasonshipp/personal_env/zsh_setup"
+
+
+plugins=(
+    git docker docker-compose
+)
+
+. "$DIR/brew.zsh"
+. "$DIR/variables.zsh"
+. "$DIR/aliases.zsh"
+. "$DIR/usr_functions.zsh"
+. "$DIR/aliases.zsh"
+# . "$DIR/conda.zsh"
+. "$DIR/nvm.zsh"
